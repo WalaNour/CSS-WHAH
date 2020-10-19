@@ -1,0 +1,154 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="fb-profile">
+      <div class="fb-profile-text father">
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /container fluid-->
+<div class="container">
+  <div class="col-sm-8">
+    <div data-spy="scroll" class="tabbable-panel">
+      <div class="tabbable-line">
+        <ul class="nav nav-tabs">
+          <li class="active">
+            <a href="#tab_default_1" data-toggle="tab"> About </a>
+          </li>
+          <li>
+            <a href="#tab_default_2" data-toggle="tab"> Career</a>
+          </li>
+          <li>
+            <a href="#tab_default_3" data-toggle="tab"> Details</a>
+          </li>
+          <li>
+            <a href="#tab_default_4" data-toggle="tab"> Desire Partner</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab_default_1"></div>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab_default_1">
+            <h4>Owner :</h4>
+            <p>
+              {{ this.userData?.owner }}
+            </p>
+            <h4>Field :</h4>
+            <p>
+              {{ this.userData?.field }}
+            </p>
+            <h4>Number Of Employees :</h4>
+            <p>
+              {{ this.userData?.numberOfEmployees }}
+            </p>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="email">About :</label>
+                  <p>{{ this.userData?.about }}</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="email">Dream Job:</label>
+                  <p>{{ this.userData?.dreamJob }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Driving Licence :</label>
+                  <p>{{ this.userData?.driving }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Facebook_link :</label>
+                  <p>{{ this.userData?.socialLink }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Skills :</label>
+                  <p>{{ this.userData?.skills }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="tab_default_4">
+            <p>Lifestyle</p>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="email">Highest Education:</label>
+                  <p>{{ this.userData?.field }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Place of Birth:</label>
+                  <p>{{ this.userData?.placeOfBirth }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="panel panel-default">
+      <div class="menu_title">General Information</div>
+      <div class="panel-body">
+        <div class="row">
+			
+          <div class="col-lg-12">
+            <div class="form-group">
+              <img
+                src="data:image/png;base64,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"
+                
+              />
+              <div class="form-group">
+                <label for="email">Name :</label>
+                <p>{{ this.userData?.name }}</p>
+              </div>
+              <div class="form-group">
+                <label for="email">Email :</label>
+                <p>{{ this.userData?.email }}</p>
+              </div>
+              <div class="form-group">
+                <label for="email">Location : :</label>
+                <p>{{ this.userData?.location}}</p>
+              </div>
+              <button type="submit" class="btn btn-danger btn-block">
+                Edit Profile
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
